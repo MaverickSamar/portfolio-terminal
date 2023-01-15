@@ -49,7 +49,6 @@ export const Input = ({ inputRef, containerRef }) => {
       event.preventDefault();
       setLastCommandIndex(0);
       setCommand(value);
-      console.log(value);
       setValue("");
       trackEvent({
         category: "Command Executed",
@@ -61,7 +60,6 @@ export const Input = ({ inputRef, containerRef }) => {
       if (!commands.length) {
         return;
       }
-    }
 
     const index: number = lastCommandIndex + 1;
 
@@ -69,6 +67,7 @@ export const Input = ({ inputRef, containerRef }) => {
       setLastCommandIndex(index);
       setValue(commands[commands.length - index]);
     }
+  }
     if (event.key === "ArrowDown") {
       event.preventDefault();
       if (!commands.length) {
