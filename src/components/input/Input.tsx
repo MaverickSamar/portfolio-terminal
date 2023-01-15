@@ -58,8 +58,6 @@ export const Input = ({ inputRef, containerRef }) => {
     }
     if (event.key === "ArrowUp") {
       event.preventDefault();
-      console.log("arrow");
-
       if (!commands.length) {
         return;
       }
