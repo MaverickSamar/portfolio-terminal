@@ -25,6 +25,7 @@ export const theme = async(args:string[],
 
             case 'set':
                 const selectedTheme = args[1];
+                console.log(selectedTheme);
 
                 return callback(selectedTheme);
 

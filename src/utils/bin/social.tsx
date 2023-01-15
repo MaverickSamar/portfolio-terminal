@@ -1,7 +1,7 @@
 import config from '../../config.json';
 
 export const instagram = async(args: string[]): Promise<string> => {
-    window.open(`htttps://instagram/${config.social.instagram}/`);
+    window.open(`https://instagram.com/${config.social.instagram}/`);
 
     return 'Opening instagram...';
 };
