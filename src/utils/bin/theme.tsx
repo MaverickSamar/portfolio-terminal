@@ -1,7 +1,7 @@
 import Themes from '../../themes.json';
 
 export const theme = async(args:string[],
-    callback: (value: string) => string,): Promise<string> => {
+    callback: (value: string) => string): Promise<string> => {
 
         if(args.length === 0)
         {
@@ -27,7 +27,7 @@ export const theme = async(args:string[],
                 const selectedTheme = args[1];
                 console.log(selectedTheme);
 
-                return callback(selectedTheme);
+                return "Will be fixed by today evening, visit again";
 
             case 'random':
                 const randomTheme = Themes[Math.floor(Math.random()* Themes.length)];
